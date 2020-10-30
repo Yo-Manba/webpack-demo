@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // 打包的入口文件路径
-    entry: './src/index.js',
+    entry: './src/js/index.js',
     
     // 打包的输出文件路径
     output: {
         path: resolve(__dirname, 'build'),
-        filename: 'build.js'
+        filename: 'js/build.js'
     },
     
     // 模块
@@ -31,7 +31,8 @@ module.exports = {
                 options: {
                     limit: 8 * 1024,
                     esModule: false,
-                    name: '[hash:10].[ext]'
+                    name: '[hash:10].[ext]',
+                    outputPath: 'imgs'
                 }
             },
             {
@@ -44,7 +45,8 @@ module.exports = {
                 exclude: /\.(css|js|html|less|jpg|png|gif)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[hash:10].[ext]'
+                    name: '[hash:10].[ext]',
+                    outputPath: 'media'
                 }
             }
         ]
