@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -121,6 +121,18 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
+/***/ "../node_modules/_html-loader@1.3.2@html-loader/dist/runtime/getUrl.js":
+/*!*****************************************************************************!*\
+  !*** ../node_modules/_html-loader@1.3.2@html-loader/dist/runtime/getUrl.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  }\n\n  if (options.maybeNeedQuotes && /[\\t\\n\\f\\r \"'=<>`]/.test(url)) {\n    return \"\\\"\".concat(url, \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///../node_modules/_html-loader@1.3.2@html-loader/dist/runtime/getUrl.js?");
+
+/***/ }),
+
 /***/ "../node_modules/_style-loader@1.1.3@style-loader/dist/runtime/injectStylesIntoStyleTag.js":
 /*!*************************************************************************************************!*\
   !*** ../node_modules/_style-loader@1.1.3@style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
@@ -141,6 +153,17 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"imgs/75e0f46a40.png\";\n\n//# sourceURL=webpack:///./src/imgs/1.png?");
+
+/***/ }),
+
+/***/ "./src/imgs/2.jpg":
+/*!************************!*\
+  !*** ./src/imgs/2.jpg ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"imgs/61fd4f0cd1.jpg\";\n\n//# sourceURL=webpack:///./src/imgs/2.jpg?");
 
 /***/ }),
 
@@ -166,6 +189,17 @@ eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkC
 
 /***/ }),
 
+/***/ "./src/index.html":
+/*!************************!*\
+  !*** ./src/index.html ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___ = __webpack_require__(/*! ../../node_modules/_html-loader@1.3.2@html-loader/dist/runtime/getUrl.js */ \"../node_modules/_html-loader@1.3.2@html-loader/dist/runtime/getUrl.js\");\nvar ___HTML_LOADER_IMPORT_0___ = __webpack_require__(/*! ./imgs/2.jpg */ \"./src/imgs/2.jpg\");\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_0___);\nvar code = \"<!DOCTYPE html>\\n<html>\\n\\t<head>\\n\\t\\t<meta charset=\\\"utf-8\\\">\\n\\t\\t<title></title>\\n\\t</head>\\n\\t<body>\\r\\n        <h1>开发环境配置优化</h1>\\r\\n        <div id=\\\"box1\\\"></div>\\r\\n        <div id=\\\"box2\\\"></div>\\r\\n        <div id=\\\"box3\\\"></div>\\r\\n        <img src=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\" style=\\\"width: 200px; height: 200px;\\\" >\\n\\t</body>\\n</html>\\n\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./src/index.html?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -174,7 +208,19 @@ eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkC
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../less/index.less */ \"./src/less/index.less\");\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_index_less__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../less/index.less */ \"./src/less/index.less\");\n/* harmony import */ var _less_index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_less_index_less__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./print.js */ \"./src/js/print.js\");\n\r\n\r\n\r\nconsole.log('index.js 被加载了！！！！！');\r\n\r\nObject(_print_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n\r\n// 一旦 module.hot 为 true ， 说明开启了 HMR 功能， ———> 让 HMR 代码生效\r\nif (false) {}\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/print.js":
+/*!*************************!*\
+  !*** ./src/js/print.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n\r\n\r\nvar print = () => {\r\n    console.log('print 被执行了!!')\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (print);\n\n//# sourceURL=webpack:///./src/js/print.js?");
 
 /***/ }),
 
@@ -186,6 +232,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _les
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../../node_modules/_style-loader@1.1.3@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/_style-loader@1.1.3@style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/_css-loader@3.4.2@css-loader/dist/cjs.js!../../../node_modules/_less-loader@7.0.2@less-loader/dist/cjs.js!./index.less */ \"../node_modules/_css-loader@3.4.2@css-loader/dist/cjs.js!../node_modules/_less-loader@7.0.2@less-loader/dist/cjs.js!./src/less/index.less\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/less/index.less?");
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************!*\
+  !*** multi ./src/js/index.js ./src/index.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/js/index.js */\"./src/js/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/index.html */\"./src/index.html\");\n\n\n//# sourceURL=webpack:///multi_./src/js/index.js_./src/index.html?");
 
 /***/ })
 
